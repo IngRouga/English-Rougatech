@@ -34,7 +34,7 @@
     var lang=document.createElement('button'); lang.type='button'; lang.className='m-lang';
     lang.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="fr" lang="fr">English</span><span class="en" lang="en">Français</span>';
     lang.addEventListener('click',function(){ var cur=document.body.getAttribute('data-lang')||'fr'; var b=document.querySelector('[data-lang-btn="'+(cur==='fr'?'en':'fr')+'"]'); if(b) b.click(); });
-    if(cta){ cta.classList.add('m-cta'); nav.insertBefore(lang,cta); } else nav.appendChild(lang);
+    if(cta){ cta.classList.add('m-cta'); }
     var k=0; [].forEach.call(nav.children,function(el){ var t=el.classList.contains('nav-item')?el.querySelector(':scope > a'):el; if(t) t.style.setProperty('--k',k++); });
   })();
 

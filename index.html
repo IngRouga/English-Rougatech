@@ -7,9 +7,6 @@
 <title>ROUGATECH | We help businesses sell more with the Web and AI</title>
 <meta content="ROUGATECH helps businesses sell more with the Web and AI: websites that convert, SaaS platforms and AI assistants, for clients in Africa and worldwide." name="description"/>
 <link href="https://en.rougatech.com/" rel="canonical"/><link href="https://en.rougatech.com/" hreflang="en" rel="alternate"/><link href="https://rougatech.com/" hreflang="fr" rel="alternate"/><link href="https://rougatech.com/" hreflang="x-default" rel="alternate"/>
-
-
-
 <meta content="index, follow" name="robots"/>
 <meta content="ROUGATECH | Sell more with the Web and AI" property="og:title"/>
 <meta content="We help businesses sell more with the Web and AI: websites, SaaS platforms and AI assistants." property="og:description"/>
@@ -169,9 +166,7 @@ fbq('track', 'PageView');
 <a class="nav-contact" href="#contact"><span class="en" lang="en">Get a free audit</span></a>
 </nav>
 <div class="header-right">
-<div aria-label="Language" class="lang-switch" role="group">
-<a data-lang-btn="fr" href="https://rougatech.com/" hreflang="fr" lang="fr" title="Version française">FR</a><button aria-current="true" class="active" data-lang-btn="en" type="button">EN</button>
-</div>
+
 <a class="btn btn-blue btn-sm btn-header" href="#contact"><span class="en" lang="en">Get a free audit</span></a>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Menu" class="menu-toggle" id="menu-toggle"><span></span><span></span></button>
 </div>
@@ -637,11 +632,11 @@ fbq('track', 'PageView');
 <a href="#work"><span class="en" lang="en">Work</span></a>
 <a href="/solutions/">Solutions</a>
 <a href="#process"><span class="en" lang="en">Process</span></a>
-<a href="https://rougatech.com/academy/">Academy</a>
+
 <a href="#founder"><span class="en" lang="en">About</span></a>
 <a href="/blog/">Blog</a>
 <a href="#faq">FAQ</a>
-<button class="foot-lang" type="button"><span class="en" lang="en">Change language</span></button>
+
 </nav>
 <div class="foot-bottom">© 2026 ROUGATECH.<br/><span class="en" lang="en">All rights reserved.</span></div>
 </div>
@@ -659,7 +654,6 @@ fbq('track', 'PageView');
 </div>
 </div>
 <div class="ai-msg">
-
 <span class="en" lang="en">Hi there! Welcome to ROUGATECH. Do you have a website or platform project in mind?</span>
 </div>
 <div class="ai-actions">
@@ -681,7 +675,6 @@ fbq('track', 'PageView');
 </a>
 </div>
 <p class="ai-note">
-
 <span class="en" lang="en">Automated welcome message — not a live chat.</span>
 </p>
 </div>
@@ -743,7 +736,7 @@ fbq('track', 'PageView');
     var lang=document.createElement('button'); lang.type='button'; lang.className='m-lang';
     lang.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="fr" lang="fr">English</span><span class="en" lang="en">Français</span>';
     lang.addEventListener('click',function(){ var cur=document.body.getAttribute('data-lang')||'fr'; var b=document.querySelector('[data-lang-btn="'+(cur==='fr'?'en':'fr')+'"]'); if(b) b.click(); });
-    if(cta){ cta.classList.add('m-cta'); nav.insertBefore(lang,cta); } else nav.appendChild(lang);
+    if(cta){ cta.classList.add('m-cta'); }
     var k=0; [].forEach.call(nav.children,function(el){ var t=el.classList.contains('nav-item')?el.querySelector(':scope > a'):el; if(t) t.style.setProperty('--k',k++); });
   })();
 
